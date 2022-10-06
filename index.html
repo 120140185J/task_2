@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2 PemWeb</title>
+    <style>
+        input[type=text], select, textarea {
+            width: 100%; 
+            padding: 12px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+            box-sizing: border-box; 
+            margin-top: 6px; 
+            margin-bottom: 16px; 
+            margin-left: 20px;
+            margin-right: 40px;
+            resize: vertical 
+        }
+        input[type=submit] {
+            background-color: #04aa20;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }     
+        input[type=submit]:hover {
+            background-color: #165719;
+        }
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="action_page.php"
+        method="get">
+      
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" name="nama" placeholder="Nama Anda..">
+      
+          <label for="nim">NIM</label>
+          <input type="text" id="nim" name="nim" placeholder="NIM Anda..">
+      
+          <label for="jurusan">Jurusan</label>
+          <select id="jurusan" name="jurusan">
+            <option value="teknikinformatika">Teknik Informatika</option>
+            <option value="teknikelektro">Teknik Elektro</option>
+            <option value="teknikkomunikasi">Teknik Komunikasi</option>
+          </select>
+      
+          <label for="saran">Saran</label>
+          <textarea id="saran" name="saran" placeholder="Ketik disini.." style="height:200px"></textarea>
+      
+          <input type="submit">
+      
+        </form>
+    </div>
+</body>
+</html>
